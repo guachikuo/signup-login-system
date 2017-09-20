@@ -1,0 +1,101 @@
+.block{
+	width: 370px;
+	height: 270px;
+	display: flex;
+	background-color: rgba(240, 240, 240, 0.5);
+	border-radius: 2%;
+	justify-content: center;
+	align-items: center;
+}
+
+.login_block{
+	width: 350px;
+	height: 250px;
+	padding-left: 30px;
+	.header{
+		display: flex;
+		align-items:center;
+		height: 52.5px;
+		h3{
+			font-size: 24px;
+			font-weight: 900;
+  			font-family: "Microsoft JhengHei", sans-serif; 
+  			margin: 0px;
+		}
+	}
+	.error{
+		width: 95%;
+		height: 29px;
+		display: flex;
+		align-items:center;
+		h3{
+			background-color: #ffb3b3;
+			font-size: 12px;
+			font-weight: 700;
+  			font-family: "Microsoft JhengHei", sans-serif;
+  			margin-top: 0px;
+  			margin-bottom: 3px;
+		}
+	}
+	.username, .password{
+		height: 72.5px;
+		h3,h4{
+			font-weight: 900;
+  			font-family: "Microsoft JhengHei", sans-serif;
+  			margin-top: 0px;
+  			margin-bottom: 3px;
+		}
+		h3{
+			font-size: 16px;
+		}
+		h4{
+			opacity: 0.7;
+			font-size: 12px;
+		}
+	}
+
+	.email{
+		height: 58px;
+		h3,h4{
+			font-weight: 900;
+  			font-family: "Microsoft JhengHei", sans-serif;
+  			margin-top: 0px;
+  			margin-bottom: 3px;
+		}
+		h3{
+			font-size: 16px;
+		}
+		h4{
+			opacity: 0.7;
+			font-size: 12px;
+		}
+	}
+
+	.button{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		height: 52.5px;
+		a{
+			width: 25%;
+			line-height: 30px;
+			color: #3850F0;
+			vertical-align: middle;
+			font-weight: 900;
+			font-family: "Microsoft JhengHei", sans-serif;
+			&:hover{
+				color: #ffffff;
+      			cursor: default;
+			}
+
+		}
+		button{
+			width: 25%; 
+			height: 30px;
+			border-radius: 2%;
+			font-weight: 900;
+			font-family: "Microsoft JhengHei", sans-serif;
+			background-color: #CEE3F6;
+		}
+	}
+}

@@ -1,0 +1,104 @@
+.block {
+  width: 370px;
+  height: 270px;
+  display: flex;
+  background-color: rgba(240, 240, 240, 0.5);
+  border-radius: 2%;
+  justify-content: center;
+  align-items: center;
+}
+.login_block {
+  width: 350px;
+  height: 250px;
+  padding-left: 30px;
+}
+.login_block .header {
+  display: flex;
+  align-items: center;
+  height: 52.5px;
+}
+.login_block .header h3 {
+  font-size: 24px;
+  font-weight: 900;
+  font-family: "Microsoft JhengHei", sans-serif;
+  margin: 0px;
+}
+.login_block .error {
+  width: 95%;
+  height: 29px;
+  display: flex;
+  align-items: center;
+}
+.login_block .error h3 {
+  background-color: #ffb3b3;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Microsoft JhengHei", sans-serif;
+  margin-top: 0px;
+  margin-bottom: 3px;
+}
+.login_block .username,
+.login_block .password {
+  height: 72.5px;
+}
+.login_block .username h3,
+.login_block .password h3,
+.login_block .username h4,
+.login_block .password h4 {
+  font-weight: 900;
+  font-family: "Microsoft JhengHei", sans-serif;
+  margin-top: 0px;
+  margin-bottom: 3px;
+}
+.login_block .username h3,
+.login_block .password h3 {
+  font-size: 16px;
+}
+.login_block .username h4,
+.login_block .password h4 {
+  opacity: 0.7;
+  font-size: 12px;
+}
+.login_block .email {
+  height: 58px;
+}
+.login_block .email h3,
+.login_block .email h4 {
+  font-weight: 900;
+  font-family: "Microsoft JhengHei", sans-serif;
+  margin-top: 0px;
+  margin-bottom: 3px;
+}
+.login_block .email h3 {
+  font-size: 16px;
+}
+.login_block .email h4 {
+  opacity: 0.7;
+  font-size: 12px;
+}
+.login_block .button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 52.5px;
+}
+.login_block .button a {
+  width: 25%;
+  line-height: 30px;
+  color: #3850F0;
+  vertical-align: middle;
+  font-weight: 900;
+  font-family: "Microsoft JhengHei", sans-serif;
+}
+.login_block .button a:hover {
+  color: #ffffff;
+  cursor: default;
+}
+.login_block .button button {
+  width: 25%;
+  height: 30px;
+  border-radius: 2%;
+  font-weight: 900;
+  font-family: "Microsoft JhengHei", sans-serif;
+  background-color: #CEE3F6;
+}
