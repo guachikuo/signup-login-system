@@ -1,9 +1,15 @@
 <?php
-	$link = mysqli_connect("localhost:3306", "root", "ejiru8fu6", "user");
+	$servername = "localhost:3306";
+	$mysql_username = "root";
+	$mysql_password = "root";
+	$dbname = "user";
+	
+	// create connection
+	$conn = mysqli_connect($servername, $mysql_username, $mysql_password, $dbname);
 
-	if(mysqli_connect_errno()) {
-		print_r(mysqli_connect_error());  
-		echo "could not connect to database!";
+	// check connection
+	if(!$conn) {
+		die("Connection failed: " . mysqli_connect_error());  
 		exit();
 	}
 ?>
