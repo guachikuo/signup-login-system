@@ -63,14 +63,14 @@ $(function(){
 		if(!username){
  			errorMesg = "Username is required !";
  			isError = 1;
- 		} else if(username.length<7){
- 			errorMesg = "Username should be longer than 6 English characters !";
+ 		} else if(username.length<7 || username.length>20){
+ 			errorMesg = "Username should be within 7 - 20 English characters !";
  			isError = 1;
  		} else if(!password){
  			errorMesg = "Password is required !";
  			isError = 1;
- 		} else if(password.length<8){
- 			errorMesg = "Password should be longer than 7 English characters !";
+ 		} else if(password.length<8 || username.length>21){
+ 			errorMesg = "Password should be within 8 - 21 English characters !";
  			isError = 1;
  		} else if(isSignup===1){
  			if(!email){
@@ -108,11 +108,7 @@ $(function(){
 			  		if(data.active===1)
 			  			showErrorMesg(data.error_msg);
 			  		if(data.redirect!==undefined)
-			  			if(data.method==="signup")
-			  				setTimeout(function(){window.location=data.redirect;},2000);
-			  			else{
-			  				window.location=data.redirect
-			  			}
+			  			window.location=data.redirect
 			  	},
 			  	error: function(err){
 			  	}

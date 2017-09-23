@@ -1,3 +1,8 @@
+<?php
+	require "config.php"; 
+	ForceDashboard();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,12 +31,12 @@
 					<div class="username">
 						<h3>Username</h3>
 						<input id="username" type="text" size="32" placeholder="username" name="username"/>
-						<h4>longer than 6 English characters </h4>
+						<h4>should be within 7 - 20 English characters </h4>
 					</div>
 					<div class="password">
 						<h3>Password</h3>
 						<input id="password" type="password" size="32" placeholder="password" name="password"/>
-						<h4>longer than 7 English characters </h4>
+						<h4>should be within 8 - 21 English characters </h4>
 					</div>
 					<div class="email" style="display: none;">
 						<h3>E-mail</h3>
